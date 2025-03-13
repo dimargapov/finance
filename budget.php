@@ -33,7 +33,7 @@
 <h1 class="welcome">Информация о бюджете </h1>
 
 <form action="clear_budget.php" method="POST">
-    <button class="clear_budget" type="submit">Очистить данные!</button>
+    <button id="clear_budget" class="clear_budget" type="submit">Очистить данные!</button>
 </form>
 <div class="line_shadow"></div>
 
@@ -73,6 +73,6 @@ if (isset($_SESSION['BudgetData'])) {
     </tbody>
 </table>
 
-
+<script src="script.js"></script>
 </body>
 </html>

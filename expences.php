@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="styles.css">
-    <title>Бюджет!</title>
+    <title>Траты!</title>
 </head>
 <body>
 <div class="topnav">
@@ -33,7 +33,7 @@
 <h1 class="welcome">Информация о тратах </h1>
 
 <form action="clear_expences.php" method="POST">
-    <button class="clear_budget" type="submit">Очистить данные!</button>
+    <button id="clear_expences" class="clear_budget" type="submit">Очистить данные!</button>
 </form>
 <div class="line_shadow"></div>
 
@@ -73,6 +73,6 @@ if (isset($_SESSION['ExpenceData'])) {
     </tbody>
 </table>
 
-
+<script src="script.js"></script>
 </body>
 </html>
