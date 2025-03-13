@@ -1,5 +1,7 @@
 <?php
 
+session_start();
+
 $db_host = "localhost";
 $db_user = "root";
 $db_password = "dimys2004";
@@ -13,7 +15,7 @@ catch (PDOException $e) {
     echo 'Connection Failed'.$e->getMessage();
 }
 
-if ($_SERVER['REQUEST_METHOD'])
+if ($_SERVER['REQUEST_METHOD'] === 'POST')
     try {
         $sqlclear = "TRUNCATE TABLE income";
         $conn->exec($sqlclear);
